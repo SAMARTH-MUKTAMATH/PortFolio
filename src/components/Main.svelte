@@ -2,36 +2,43 @@
         import Step from "./Step.svelte";
         import { onMount } from 'svelte';
         import { initializeAnimations, addStepClass } from '$lib/animation'; // Updated import
-        let steps = [
-            {
-                name: "Portfolio",
-                icon: "fa-regular fa-address-card",
-                description:
-                    "Smoljames Store is a a merchanising store created with Next.js, Commerce.js & Stripe! Commerce.js is a CMS for managing project and Stripe is used for all transaction handling.",
-            },
-           {
-                name: "AI Quiz App",
-                icon: "fa-solid fa-robot",
-                description:
-                    "AI Quiz App is a dynamic quiz application that generates questions using AI, providing real-time scoring and feedback to enhance the learning experience.",
-            },
-            {
-                name: "VideoSummarization",
-                icon: "fa-sharp fa-solid fa-video" ,
-                description:
-                    "Augment your datasets with our filters and dataset manipulations to ensure your models are trained on the highest quality datasets (coming soon).",
-            },
-            {
-                name: "MemeGenerator",
-    icon: "fa-regular fa-face-laugh-squint",
-    description: "",
-},
-{
-                name:"Project Deck",
-                icon: "fa-solid fa-layer-group ",
-                description: "Check out my other projects on my GitHub profile",
-}
-        ];
+       let steps = [ 
+    {
+        name: "Portfolio",
+        icon: "fa-regular fa-address-card",
+        description: "My Web Portfolio is a dynamic and interactive website built using SvelteKit and JavaScript, styled with TailwindCSS. Features dynamic design, smooth transitions, and optimized user experience while showcasing expertise in modern frontend development technologies.",
+    },
+    {
+        name: "AI Quiz App",
+        icon: "fa-solid fa-robot",
+        description: "AI Quiz App kickstarts with smart question generation, crafted using SvelteKit, TypeScript, and TailwindCSS. Delivers smooth transitions, real-time scoring, and instant feedback—keeping users engaged, motivated, and ready to learn more with every attempt.",
+    },
+    {
+        name: "Video Summarization",
+        icon: "fa-sharp fa-solid fa-video",
+        description: "Video Summarization leverages long-duration videos to quickly summarize key content based on user queries, saving significant time. Built with Python for backend processing, integrates YOLO (You Only Look Once) for real-time object detection, with a frontend designed using CSS for an intuitive and responsive user interface.",
+    },
+    {
+        name: "Weather Forecast App",
+        icon: "fa-solid fa-cloud-sun",
+        description: "Weather Forecast App delivers real-time updates powered by the OpenWeather API, built using TypeScript, React, and shadcn/ui. With 5-day forecasts, interactive visuals, and responsive UI, it offers a seamless and intuitive experience—whether planning your week or tracking a storm.",
+    },
+    {
+        name: "SpiceSpirit Cocktails",
+        icon: "fa-solid fa-martini-glass-citrus",
+        description: "SpiceSpirit Cocktails is an interactive landing page inspired by cocktail branding and mixology. Built using GSAP for smooth animations and React to structure reusable components. Focus is on motion, scroll triggers, and vivid visual storytelling.",
+    },
+    {
+        name: "F1 Fan Landing Page",
+        icon: "fa-solid fa-flag-checkered",
+        description: "F1 Fan Landing Page brings the thrill of Formula 1 to fans with live driver standings, race calendars, and driver insights. Built using React, it also includes plans for live race score updates and future dev tools tailored for racing fans.",
+    },
+    {
+        name: "Project Deck",
+        icon: "fa-solid fa-layer-group",
+        description: "Experimenting, building, and learning.",
+    }
+];
 
         let benefits = [
             {
@@ -198,150 +205,175 @@
                 <p>Watch the video</p>
             </a>
 
-        <!-- Listing  steps    -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 justify-center">
-    <Step step={steps[0]}>
-        <p>
-            My Web Portfolio is a dynamic and interactive website built using <strong class="text-violet-400">SvelteKit</strong> and <strong class="text-violet-400">JavaScript</strong>, styled with <strong class="text-violet-400">TailwindCSS</strong>. Features dynamic design, smooth transitions, and optimized user experience while showcasing expertise in modern frontend development technologies.
-        </p>
-    </Step>
-    
-    <Step step={steps[1]}>
-        <p>
-            <strong class="text-violet-400">AI Quiz App</strong> kickstarts with smart question generation, crafted using <strong class="text-violet-400">SvelteKit</strong>, <strong class="text-violet-400">TypeScript</strong>, and <strong class="text-violet-400">TailwindCSS</strong>. Delivers smooth transitions, real-time scoring, and instant feedback—keeping users engaged, motivated, and ready to learn more with every attempt.
-        </p>
-    </Step>
-    
-    <Step step={steps[2]}>
-        <p>
-            Video Summarization leverages long-duration videos to quickly summarize key content based on user queries, saving significant time. Built with <strong class="text-violet-400">Python</strong> for backend processing, integrates <strong class="text-violet-400">YOLO (You Only Look Once)</strong> for real-time object detection, with a frontend designed using <strong class="text-violet-400">CSS</strong> for an intuitive and responsive user interface.
-        </p>
-    </Step>
-</div>
+ <!-- Main Featured Projects Grid -->
+<!-- Projects Section -->
+<section>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 justify-center">
+        <Step step={steps[0]}>
+            <p>
+                My Web Portfolio is a dynamic and interactive website built using <strong class="text-violet-400">SvelteKit</strong> and <strong class="text-violet-400">JavaScript</strong>, styled with <strong class="text-violet-400">TailwindCSS</strong>. Features dynamic design, smooth transitions, and optimized user experience while showcasing expertise in modern frontend development technologies.
+            </p>
+        </Step>
+        
+        <Step step={steps[1]}>
+            <p>
+                <strong class="text-violet-400">AI Quiz App</strong> kickstarts with smart question generation, crafted using <strong class="text-violet-400">SvelteKit</strong>, <strong class="text-violet-400">TypeScript</strong>, and <strong class="text-violet-400">TailwindCSS</strong>. Delivers smooth transitions, real-time scoring, and instant feedback—keeping users engaged, motivated, and ready to learn more with every attempt.
+            </p>
+        </Step>
+        
+        <Step step={steps[2]}>
+            <p>
+                Video Summarization leverages long-duration videos to quickly summarize key content based on user queries, saving significant time. Built with <strong class="text-violet-400">Python</strong> for backend processing, integrates <strong class="text-violet-400">YOLO (You Only Look Once)</strong> for real-time object detection, with a frontend designed using <strong class="text-violet-400">CSS</strong> for an intuitive and responsive user interface.
+            </p>
+        </Step>
 
-             
-            
-            <Step step={steps[4]}>
-                <div class="mt-4">
-                    <p class="text-gray-500 mb-1 text-center">
-                        Experimenting, building, and learning.
-                    </p>
+        <Step step={steps[3]}> 
+            <p>
+                Weather Forecast App delivers real-time updates powered by the <strong class="text-violet-400">OpenWeather API</strong>, built using <strong class="text-violet-400">TypeScript</strong>, <strong class="text-violet-400">React</strong>, and <strong class="text-violet-400">shadcn/ui</strong>. With 5-day forecasts, interactive visuals, and responsive UI, it offers a seamless and intuitive experience—whether planning your week or tracking a storm.
+            </p>
+        </Step>
 
-                 <details class="group">
-  <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
-    <span class="flex items-center text-lg">
-      <i class="fa-solid fa-layer-group mr-2"></i> MonkGPT
-    </span>
-    <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
-      <i class="fa-solid fa-chevron-down"></i>
-    </span>
-  </summary>
+        <Step step={steps[4]}>
+            <p>
+                <strong class="text-violet-400">SpiceSpirit Cocktails</strong> is an interactive landing page inspired by cocktail branding and mixology. Built using <strong class="text-violet-400">GSAP</strong> for smooth animations and <strong class="text-violet-400">React</strong> to structure reusable components. Focus is on motion, scroll triggers, and vivid visual storytelling.
+            </p>
+        </Step>
 
-  <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
-    <div class="flex items-start">
-      <p class="text-gray-200 text-[0.8125rem] text-left">
-        MonkGPT is a lightweight AI assistant built using the <strong class="text-violet-400">Gemini API</strong> and <strong class="text-violet-400">JavaScript</strong>. It offers a sleek interface powered by <strong class="text-violet-400">CSS</strong>, combining minimal design with responsive interactivity. Developed in minutes, it's a fast prototype that shows how simple tools can create powerful results.
-      </p>
-      <a href="https://monkgpt.netlify.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
-        Live <i class="fa-solid fa-globe ml-2"></i>
-      </a>
+        <Step step={steps[5]}>
+            <p>
+                <strong class="text-violet-400">F1 Fan Landing Page</strong> brings the thrill of Formula 1 to fans with live driver standings, race calendars, and driver insights. Built using <strong class="text-violet-400">React</strong>, it also includes plans for live race score updates and future dev tools tailored for racing fans.
+            </p>
+        </Step>
     </div>
-  </div>
-</details>
-                    <div class="accordion w-full space-y-3 mt-6">
-                        <details class="group">
-                            <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
-                                <span class="flex items-center text-lg">
-                                    <i class="fa-solid fa-layer-group mr-2"></i> Tres en Raya
-                                </span>
-                                <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </summary>
-                            <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
-                                <div class="flex items-start">
-                                    <p class="text-gray-200 text-[0.8125rem] text-left">
-                                        Built on <strong class="text-violet-400">JS</strong>, <strong class="text-violet-400">HTML</strong>, and <strong class="text-violet-400">CSS</strong>, this fully responsive Tic-Tac-Toe game offers a fun and interactive experience.
-                                    </p>
-                                    <a href="https://tic-tac-toe-o79b.vercel.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
-                                        Live <i class="fa-solid fa-globe ml-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </details>
-                        <details class="group">
-                            <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
-                                <span class="flex items-center text-lg">
-                                    <i class="fa-solid fa-layer-group mr-2"></i> Tap&Lol
-                                </span>
-                                <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </summary>
-                            <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
-                                <div class="flex items-start">
-                                    <p class="text-gray-200 text-[0.8125rem] text-left">
-                                        Tap&Lol is a 100% responsive and interactive Meme Generator built using <strong class="text-violet-400">HTML</strong>, <strong class="text-violet-400">CSS</strong>, <strong class="text-violet-400">JavaScript</strong>, <strong class="text-violet-400">API</strong>, and powered by the <strong class="text-violet-400">GSAP</strong>. It offers a fun and engaging way to tap through  memes, making it perfect for spending time and laughing. With smooth animations and dynamic transitions.
-                                    </p>
-                                    <a href="https://tapandlol.netlify.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
-                                        Live <i class="fa-solid fa-globe ml-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </details>
-                        <details class="group">
-                            <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
-                                <span class="flex items-center text-lg">
-                                    <i class="fa-solid fa-layer-group mr-2"></i> Connect Me Via
-                                </span>
-                                <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </summary>
-                            <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
-                                <div class="flex items-start">
-                                    <p class="text-gray-200 text-[0.8125rem] text-left">
-                                            Connect Me Via is a quick and stylish social link hub, whipped up in just 10 minutes using <strong class="text-violet-400">HTML</strong>, <strong class="text-violet-400">CSS</strong>, and <strong class="text-violet-400">GSAP</strong>. Inspired by Linktree, it’s a simple yet effective way to share multiple <br> contact points or social profiles in one place. Featuring smooth animations and a clean design, it’s a testament to rapid prototyping and creative experimentation.
-                                        </p>
-                                    <a href="https://connectmevia.netlify.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
-                                        Live <i class="fa-solid fa-globe ml-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </details>
-                        <details class="group">
-                            <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
-                                <span class="flex items-center text-lg">
-                                    <i class="fa-solid fa-layer-group mr-2"></i> Section 4
-                                </span>
-                                <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </summary>
-                            <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
-                                <!-- Empty content area -->
-                            </div>
-                        </details>
-                        <details class="group">
-                            <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
-                                <span class="flex items-center text-lg">
-                                    <i class="fa-solid fa-layer-group mr-2"></i> Section 5
-                                </span>
-                                <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </summary>
-                            <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
-                                <!-- Empty content area -->
-                            </div>
-                        </details>
+
+    <!-- Side Projects / Experiments Section -->
+    <div class="mt-16 lg:mt-20">
+        <Step step={steps[6]}>
+            <div class="mt-4">
+                <p class="text-gray-500 mb-1 text-center">
+                    Experimenting, building, and learning.
+                </p>
+
+                <details class="group">
+                    <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
+                        <span class="flex items-center text-lg">
+                            <i class="fa-solid fa-layer-group mr-2"></i> MonkGPT
+                        </span>
+                        <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+
+                    <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
+                        <div class="flex items-start">
+                            <p class="text-gray-200 text-[0.8125rem] text-left">
+                                MonkGPT is a lightweight AI assistant built using the <strong class="text-violet-400">Gemini API</strong> and <strong class="text-violet-400">JavaScript</strong>. It offers a sleek interface powered by <strong class="text-violet-400">CSS</strong>, combining minimal design with responsive interactivity. Developed in minutes, it's a fast prototype that shows how simple tools can create powerful results.
+                            </p>
+                            <a href="https://monkgpt.netlify.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
+                                Live <i class="fa-solid fa-globe ml-2"></i>
+                            </a>
+                        </div>
                     </div>
+                </details>
+
+                <div class="accordion w-full space-y-3 mt-6">
+                    <details class="group">
+                        <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
+                            <span class="flex items-center text-lg">
+                                <i class="fa-solid fa-layer-group mr-2"></i> Tres en Raya
+                            </span>
+                            <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
+                            <div class="flex items-start">
+                                <p class="text-gray-200 text-[0.8125rem] text-left">
+                                    Built on <strong class="text-violet-400">JS</strong>, <strong class="text-violet-400">HTML</strong>, and <strong class="text-violet-400">CSS</strong>, this fully responsive Tic-Tac-Toe game offers a fun and interactive experience.
+                                </p>
+                                <a href="https://tic-tac-toe-o79b.vercel.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
+                                    Live <i class="fa-solid fa-globe ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
+                            <span class="flex items-center text-lg">
+                                <i class="fa-solid fa-layer-group mr-2"></i> Tap&Lol
+                            </span>
+                            <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
+                            <div class="flex items-start">
+                                <p class="text-gray-200 text-[0.8125rem] text-left">
+                                    Tap&Lol is a 100% responsive and interactive Meme Generator built using <strong class="text-violet-400">HTML</strong>, <strong class="text-violet-400">CSS</strong>, <strong class="text-violet-400">JavaScript</strong>, <strong class="text-violet-400">API</strong>, and powered by the <strong class="text-violet-400">GSAP</strong>. It offers a fun and engaging way to tap through memes, making it perfect for spending time and laughing. With smooth animations and dynamic transitions.
+                                </p>
+                                <a href="https://tapandlol.netlify.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
+                                    Live <i class="fa-solid fa-globe ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
+                            <span class="flex items-center text-lg">
+                                <i class="fa-solid fa-layer-group mr-2"></i> Connect Me Via
+                            </span>
+                            <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
+                            <div class="flex items-start">
+                                <p class="text-gray-200 text-[0.8125rem] text-left">
+                                    Connect Me Via is a quick and stylish social link hub, whipped up in just 10 minutes using <strong class="text-violet-400">HTML</strong>, <strong class="text-violet-400">CSS</strong>, and <strong class="text-violet-400">GSAP</strong>. Inspired by Linktree, it's a simple yet effective way to share multiple contact points or social profiles in one place. Featuring smooth animations and a clean design, it's a testament to rapid prototyping and creative experimentation.
+                                </p>
+                                <a href="https://connectmevia.netlify.app/" target="_blank" class="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center ml-auto text-[0.8125rem]">
+                                    Live <i class="fa-solid fa-globe ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
+                            <span class="flex items-center text-lg">
+                                <i class="fa-solid fa-layer-group mr-2"></i> Section 4
+                            </span>
+                            <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
+                            <!-- Empty content area -->
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer text-violet-400 bg-gray-950 p-4 rounded-lg hover:bg-black transition-all duration-300 ease-in-out flex justify-between items-center shadow-md hover:shadow-lg">
+                            <span class="flex items-center text-lg">
+                                <i class="fa-solid fa-layer-group mr-2"></i> Section 5
+                            </span>
+                            <span class="text-violet-400 transform transition-transform duration-300 group-open:rotate-180">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </summary>
+                        <div class="accordion-content bg-black group-open:bg-gray-900 p-4 rounded-b-lg border-t border-gray-900 text-gray-200 opacity-0 group-open:opacity-100 transition-all duration-300 ease-in-out">
+                            <!-- Empty content area -->
+                        </div>
+                    </details>
                 </div>
-            </Step>
+            </div>
+        </Step>
+    </div>
+</section>
 
-
-        </section>
-
+ 
 
 
 
