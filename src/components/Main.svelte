@@ -9,11 +9,11 @@
                 description:
                     "Smoljames Store is a a merchanising store created with Next.js, Commerce.js & Stripe! Commerce.js is a CMS for managing project and Stripe is used for all transaction handling.",
             },
-            {
-                name: "unknown App",
-                icon:"fa-sharp fa-regular fa-sun",
+           {
+                name: "AI Quiz App",
+                icon: "fa-solid fa-robot",
                 description:
-                    "Test for model robustness with customized test profiles and receive exhaustive reporting on the performance and potential vulnerabilities of your model.",
+                    "AI Quiz App is a dynamic quiz application that generates questions using AI, providing real-time scoring and feedback to enhance the learning experience.",
             },
             {
                 name: "VideoSummarization",
@@ -199,28 +199,26 @@
             </a>
 
         <!-- Listing  steps    -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 justify-center">
+    <Step step={steps[0]}>
+        <p>
+            My Web Portfolio is a dynamic and interactive website built using <strong class="text-violet-400">SvelteKit</strong> and <strong class="text-violet-400">JavaScript</strong>, styled with <strong class="text-violet-400">TailwindCSS</strong>. Features dynamic design, smooth transitions, and optimized user experience while showcasing expertise in modern frontend development technologies.
+        </p>
+    </Step>
+    
+    <Step step={steps[1]}>
+        <p>
+            <strong class="text-violet-400">AI Quiz App</strong> kickstarts with smart question generation, crafted using <strong class="text-violet-400">SvelteKit</strong>, <strong class="text-violet-400">TypeScript</strong>, and <strong class="text-violet-400">TailwindCSS</strong>. Delivers smooth transitions, real-time scoring, and instant feedback—keeping users engaged, motivated, and ready to learn more with every attempt.
+        </p>
+    </Step>
+    
+    <Step step={steps[2]}>
+        <p>
+            Video Summarization leverages long-duration videos to quickly summarize key content based on user queries, saving significant time. Built with <strong class="text-violet-400">Python</strong> for backend processing, integrates <strong class="text-violet-400">YOLO (You Only Look Once)</strong> for real-time object detection, with a frontend designed using <strong class="text-violet-400">CSS</strong> for an intuitive and responsive user interface.
+        </p>
+    </Step>
+</div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 justify-centre">
-                <Step step={steps[0]}>
-                    <p>
-                        My Web Portfolio is a dynamic and interactive website built using <strong
-                            class="text-violet-400">  
-                            SvelteKit , JavaScript </strong> styled with <strong
-                            class="text-violet-400">   TailwindCSS .</strong
-                        >  Features dynamic design, smooth transitions,ensuring an optimized user experience while showcasing my expertise in frontend development technologies .
-                    </p>
-                </Step>
-                <Step step={steps[1]}>
-                
-                    <!-- weatehr desc  -->
-                </Step>
-                <Step step={steps[2]}>
-                    <p>
-                        Video Summarization leverages long-duration videos to quickly summarize key content based on user queries, saving significant time. Built with <strong class="text-violet-400">Python</strong> for backend processing, it integrates <strong class="text-violet-400">YOLO (You Only Look Once)</strong> for real-time object detection, while the frontend is designed using <strong class="text-violet-400">CSS</strong> for an intuitive and responsive user interface.
-                    </p>
-                    
-                </Step>
-            </div>
              
             
             <Step step={steps[4]}>
